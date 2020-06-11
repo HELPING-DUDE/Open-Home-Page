@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+  
+    <title>Exam Portal</title>
+</head>
+<body>
+    <!----------------------------------navbar ------------------------------------------->
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"> <img src="img/IMOLogo.gif" class="img-fluid" height="30" width="40"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active"><a class="nav-link active" href="#"><span class="fa fa-home">Exam Portal</span></a></li>
+                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info">Student</span></a></li>
+                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list">About</span> </a></li>
+                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address">Contact</span></a></li>
+                </ul>
+                <span class="navbar-text">
+                 <a id="loginBtn">
+                <span class="fa fa-sign-in"></span> Login </a>
+                 </span>
+                 <h1>h</h1>
+                 <span class="navbar-text">
+                    <a id="signupBtn">
+                   <span class="fa fa-sign-in"></span> Login</a>
+                    </span>
+             </div>
+          </div>
+       </nav>
+
+    <!------------------------------Making form for login at navbar location-------------------------->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <!--------------------------------email------------------------>
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                         <!-------------------------------------password------------------------->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                         <!-------------------------------------remember me------------------------->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                          <!---------------------------------------------Two buttons cancel and signin  --------------->
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------SIGNUP MODEL----------------------------------------->
+
+    <!------------------------------------Header-------------------------------->
+    
+        <header class="jumbotron">
+            
+            <div class="container">
+                <div class="row row-header"> 
+                    <div class="col-12 col-sm-6">
+                        <h1 style="color: #370617;">Helping Dude</h1>
+                        <p><b>Ready to Help Everyone!</b></p>
+                    </div>
+                    <div class="col-12 col-sm ">
+                        <img src="img/IMOLogo.gif" class="img-fluid ">
+                      
+                    </div>
+                        <div class="col-12 col-sm ">
+                            <a role="button" class="btn btn-block nav-link btn-success" id="examstart">GIVE EXAM</a>
+                        </div>
+                        <div class="col-12 col-sm ">
+                            <a role="button" class="btn btn-block nav-link btn-success" id="examstart">Scores</a>
+                        </div>
+                </div>
+            </div>
+         
+       
+        </header>
+    
+       
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>  
+    
+    <!------------------------------------Script for Login mOdal------------------------------it is copeid from somewhere-->
+    <script>
+         $("#loginBtn").click(function () {
+        $('#loginModal').modal('toggle')
+    });
+    $("#signupBtn").click(function () {
+        $('#signupModal').modal('toggle')
+    });
+    </script>
+</body>
+</html>
